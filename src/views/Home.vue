@@ -7,12 +7,14 @@
     <button @click="goToDaybook" class="btn btn-primary">Primary</button>
     <button @click="goToDaybook" class="btn btn-secondary">Secondary</button>
     <button @click="goToDaybook" class="btn btn-success">Success</button>
+
   </div>
 </template>
 
+
 <script>
 export default {
-  methods:{
+  methods: {
     goToDaybook() {
       this.$router.push({ name: 'no-entry' })
     }
